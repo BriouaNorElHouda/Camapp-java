@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mintish">
+
+        <ImageView
+            android:id="@+id/upButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            app:tint="@color/white" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter un offre"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="7dp"
+        android:text="Titre de l'offre"
+
+        />
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Description de l'offre"
+
+        />
+
+    <EditText
+        android:id="@+id/quanti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="7dp"
+        android:text="Quantité"
+        android:inputType="number"
+
+        />
+
+    <EditText
+        android:id="@+id/prix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="7dp"
+        android:text="Prix"
+        android:inputType="number"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/StartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_margin="7dp"
+        android:drawableLeft="@drawable/calanda"
+        android:layout_marginLeft="70dp"
+        android:baselineAligned="false"
+        android:drawablePadding="20dp"
+        android:text="Apartir de"
+        android:inputType="date"
+        />
+    <EditText
+        android:id="@+id/EndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_margin="7dp"
+        android:drawableLeft="@drawable/calanda"
+        android:layout_marginLeft="70dp"
+        android:baselineAligned="false"
+        android:drawablePadding="20dp"
+        android:text="Délai"
+        android:inputType="date"
+        />
+
+    <ImageView
+        android:id="@+id/imageoff"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="7dp"
+        android:drawableLeft="@drawable/calanda"
+        android:layout_width="100dp"
+        android:layout_height="151dp"
+        android:src="@mipmap/noimg_foreground"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+
+        />
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:text="AJOUTER"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/mintish"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/addingic"/>
+
+</LinearLayout>
